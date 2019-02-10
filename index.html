@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
         <link rel="stylesheet" href="./styles/stylesheet.css"/>
-
+        
         <title> Ravi Patel </title>
     </head>
 
@@ -23,19 +23,86 @@
                 <li class="list-group-item animated fadeInUp delay-3s"> Coffee Enthusiast </li>
             </ul>
         </div>
-
-        <div class = "right">
+        
+        <div class = "right hidden">
             <div class = "section">
-                <h3> 
-                    This site is currently 
-                    <span style = "color: gold">under construction</span>, sorry! 
+                <h3> About me </h3>
+                <hr>
+                <p> 
+                    Hi, I'm Ravi Patel! I'm a passionate developer who loves to build cool 
+                    projects (even if its just for fun). I'm a pretty simple person and like 
+                    to keep things light hearted, so I'll just list off a few skills and 
+                    facts about me here.
+                </p>
+                <ul class = "list-group">
+                    <li class = "list-group-item"> Javascript, Java, C, Python </li>
+                    <li class = "list-group-item"> Node.js, Express, Firebase </li>
+                    <li class = "list-group-item"> Fan of Cold Brewed Coffee </li>
+                    <li class = "list-group-item"> Love puppies </li>
+                </ul>
+            </div>
+
+            <div class = "section">
+                <h3> Projects </h3>
+                <hr>
+
+                <div class = "project">
+                    <h5> TeamPlay </h5>
+                    <p> 
+                        Listen to the same music with your friends on Spotify, in real 
+                        time. Built using the Spotify Web SDK, and Firebase. 
+                        <br><br>
+                        Listen to what I'm currently playing
+                        <a href = "https://team--play.herokuapp.com/ravi"> here </a>
+                        (or what I listened to most recently).
+                    </p>
+                    <a class = "source" href = "https://github.com/raviolliii/TeamPlay"> View Source 
+                        <span class = "arrow"> &#10140; </span>
+                    </a>
+                </div>
+
+                <div class = "project">
+                    <h5> SHA </h5>
+                    <p> 
+                        Not so long ago I started learning more about cybersecurity. I learn
+                        by building projects, so I read some documentation and jumped straight
+                        in. SHA is a repository that has the SHA-1 and SHA-256 cryptographic 
+                        hashing functions, built using Javascript. Here's a quick 
+                        <a href = "./sha.html"> demo </a>.
+                    </p>
+                    <a class = "source" href = "https://github.com/raviolliii/SHA"> View Source 
+                        <span class = "arrow"> &#10140; </span>
+                    </a>
+                </div>
+
+                <h3 style = "font-size: 1.5rem; font-weight: normal; text-align: center; margin-bottom: 6rem"> 
+                    This website is currently still under development, but you can still
+                    find more of my projects on my Github.
                     <br><br>
-                    Check back later for updates!
+                    <a href = "https://github.com/raviolliii"> Github </a>
                 </h3>
             </div>
+
+            <div class = "section">
+                <h3> For the Inner Developer </h3>
+                <hr>
+                <p> 
+                    To get to know me a little more as a developer, I've listed off a 
+                    few things here about what tools I use and what I'm working on.
+                    I'll also edit this list as I make progress, so be sure to check back 
+                    for updates if you're interested.
+                </p>
+                <ul class = "list-group">
+                    <li class = "list-group-item"> Editor: Sublime Text 3 (<span>dark theme </span> all the way) </li>
+                    <li class = "list-group-item"> Terminal: <span>iTerm2</span> (custom version of Nord theme) </li>
+                    <li class = "list-group-item"> Shell: <span>zsh</span> (spaceship theme) </li>
+                    <li class = "list-group-item"> Current Project: Figuring out/rebuilding <span>AES</span> algorithm </li>
+                </ul>
+            </div>
+
         </div>
 
-        <script src = "script.js"></script>
+        <script src = "./js/script.js"></script>
 
     </body>
 </html>
