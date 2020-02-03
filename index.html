@@ -2,9 +2,6 @@
 <html>
     <head>
         <link rel="icon" href="favicon.ico"/>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
         <link rel="stylesheet" href="./styles/stylesheet.css"/>
         
         <title> Ravi Patel </title>
@@ -12,87 +9,32 @@
 
     <body>
 
-        <div class = "left">
-            <div class = "profile">
-                <img class = "animated fadeInUp" src = "assets/profile.jpg"/>
-                <div class = "name animated fadeInUp"> Ravi Patel </div>
+        <div class="left-container">
+            <div class="container">
+                <div class="image-container">
+                    <img class="profile-picture" src="assets/profile.jpg" />
+                    <span class="name"> Ravi Patel </span>
+                </div>
+                <div class="list">
+                    <div class="list-item"> Developer </div>
+                    <div class="list-item"> Coffee Enthusiast </div>
+                </div>
             </div>
-            <ul class="list-group">
-                <li class="list-group-item animated fadeInUp delay-1s"> Student </li>
-                <li class="list-group-item animated fadeInUp delay-1s"> Developer </li>
-                <li class="list-group-item animated fadeInUp delay-1s"> Coffee Enthusiast </li>
-            </ul>
         </div>
         
-        <div class = "right hidden">
-            <div class = "section">
-                <h3> About me </h3>
-                <hr>
-                <p> 
-                    Hi, I'm Ravi Patel! I'm a passionate developer who loves to build cool 
-                    projects (even if it's just for fun). I'm a pretty simple person and like 
-                    to keep things light hearted, so I'll just list off a few skills and 
-                    facts about me.
-                </p>
-                <ul class = "list-group">
-                    <li class = "list-group-item"> Javascript, Python, C, Java </li>
-                    <li class = "list-group-item"> Node.js, Express, Firebase </li>
-                    <li class = "list-group-item"> HTML, CSS, Bootstrap </li>
-                    <li class = "list-group-item"> Fan of Cold Brewed Coffee </li>
-                    <li class = "list-group-item"> Love puppies </li>
-                </ul>
+        <div class="right-container">
+            <div class="container">
+                <div class="command-line"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-triangle">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                        <line x1="12" y1="9" x2="12" y2="13" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" /></svg>
+                    <div class="command-line-content">
+                        Site is under construction, it'll be back up soon!
+                    </div>
+                </div>
             </div>
-
-            <div class = "section">
-                <h3> Projects </h3>
-                <hr>
-
-                <div class = "project">
-                    <h5> FinalsClub </h5>
-                    <p> 
-                        My friend and I recently Co-Founded a startup called FinalsClub. 
-                        We’re an education technology company that focuses on bringing people together. 
-                        <br><br>
-                        Built at Rutgers University, our team’s main goal is to create a platform 
-                        which connects students through collaboration, as well as provides 
-                        personalized help for getting through classes.
-                        <br><br>
-                        Learn more about the company at 
-                        <a href = "http://finalsclub.io"> FinalsClub.io </a>
-                    </p>
-                </div>
-
-                <div class = "project">
-                    <h5> TeamPlay </h5>
-                    <p> 
-                        Listen to the same music with your friends on Spotify, in real 
-                        time. Built using the Spotify Web SDK, and Firebase. 
-                        <br><br>
-                        Listen to what I'm currently playing
-                        <a href = "https://team--play.herokuapp.com/ravi"> here </a>
-                        (or what I listened to most recently).
-                    </p>
-                    <a class = "source" href = "https://github.com/raviolliii/TeamPlay"> View Source 
-                        <span class = "arrow"> &#10140; </span>
-                    </a>
-                </div>
-
-                <div class = "project">
-                    <h5> AES Encryption </h5>
-                    <p>
-                        A Python rebuild of the Advanced Encyrption Algorithm.
-                    </p>
-                    <a class = "source" href = "https://github.com/raviolliii/AES-Encryption"> View Source 
-                        <span class = "arrow"> &#10140; </span>
-                    </a>
-                </div>
-
-                <h5>
-                    Check out more of my projects on
-                    <a href = "https://github.com/raviolliii"> Github </a>
-                </h5>
-            </div>
-
         </div>
 
         <script src = "./js/script.js"></script>

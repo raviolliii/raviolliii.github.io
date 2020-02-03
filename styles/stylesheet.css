@@ -1,206 +1,91 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono&display=swap');
 
 html {
+    width: 100%;
     height: 100%;
 }
 
 body {
-    background-color: #222426;
-    color: #f7f7f7;
+    background-color: #252525;
+    color: white;
     height: 100%;
     font-family: "Open Sans", sans-serif;
     padding: 0px;
     margin: 0px;
-    position: relative;
     display: flex;
-    align-items: stretch;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-y: hidden;
 }
 
-*::selection {
-    background-color: rgba(255, 98, 0, 0.5);
-    color: #222426;
-}
-
-.left *::selection {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #f7f7f7;
-}
-
-a, a:visited, a:active, a:hover, a:link {
-    color: #ff6200;
-    text-decoration: none;
-}
-
-h3 {
-    text-align: right;
-    font-family: "Nunito", sans-serif;
-    font-weight: bold;
-}
-
-h5 {
-    font-family: "Nunito", sans-serif;
-}
-
-p {
-    width: 75%;
-}
-
-span {
-    color: #ff6200;
-}
-
-img {
+.profile-picture {
     width: 8rem;
     height: 8rem;
     border-radius: 4px;
     margin-right: 2rem;
-    vertical-align: bottom;
 }
 
-hr {
-    background-color: #ff6200;
-    width: 4rem;
-    height: 2px;
-    border: none;
-    margin-right: 0px;
-    margin-bottom: 2rem;
+.left-container {
+    flex: 1.5;
 }
 
-code {
-    background-color: #353535;
-    color: #f7f7f7;
-    border-radius: 4px;
-    padding: 0.5rem 1rem;;
-    margin: 1rem;
-    display: block;
+.right-container {
+    flex: 2;
 }
 
-code::selection {
-    background-color: white;
-    color: #353535;
-}
-
-span.bash {
-    color: #ff6200;
-}
-
-.left {
-    font-family: "Nunito", sans-serif;
-    flex: 4;
+.left-container, .right-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow-y: hidden;
+    align-items: center;
+    /* border: solid 1px lime; */
 }
 
-.profile {
+.container {
+    width: 50%;
+}
+
+.right-container .container {
     width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .name {
-    font-size: 1.6rem;
-    margin-bottom: 5%;
-    display: inline-block;
+    font-size: 26px;
+    padding-bottom: 32px;
 }
 
-ul.list-group, li.list-group-item {
-    background-color: transparent;
-    color: inherit;
-    text-align: left;
-    border: none;
-    padding: 0px;
+.list {
+    margin-top: 32px;
 }
 
-ul.list-group {
-    list-style: none;
-    display: block;
+.list-item {
+    font-size: 18px;
+    margin: 12px 0;
 }
 
-div:not(.left) li.list-group-item::before {
-    content: "\0203a";
-    color: #b0b0b0;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-right: 1rem;
+.command-line {
+    background-color: #353535ee;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 15px;
+    padding: 16px 24px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.left ul.list-group {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3rem;
+svg {
+    color: gold;
+    width: 22px;
+    height: 22px;
 }
 
-.left li.list-group-item {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.right.hidden {
-    padding-top: 9rem;
-    flex: 0;
-}
-
-.right {
-    background-color: #f7f7f7;
-    padding: 7rem 4rem;
-    padding-right: 10%;
-    flex: 5;
-    overflow-y: auto;
-    transition: padding 0.75s ease-out 1.2s, flex 1.7s cubic-bezier(.59,.01,.35,1.03);
-}
-
-.right.hidden > * {
-    word-wrap: normal;
-    opacity: 0;
-    transition: opacity 0.75s ease-out 1.2s;
-}
-
-.right > * {
-    color: #222426;
-    opacity: 1;
-    transition: opacity 0.75s ease-out 1.2s;
-}
-
-.right::-webkit-scrollbar, .right::-webkit-scrollbar-thumb {
-    background-color: transparent;
-    width: 0px;
-}
-
-.section {
-    margin: 0px;
-    margin-bottom: 2rem;
-}
-
-.project {
-    margin-bottom: 4rem;
-}
-
-.project > *:not(h5) {
-    margin-left: 2rem;
-}
-
-.source {
-    color: #ff6200;
-    font-size: 0.9rem;
-    border-color: inherit;
-    border-bottom: solid 2px;
-    padding-bottom: 2px;
-    display: inline-block;
-}
-
-.source:hover {
-    cursor: pointer;
-}
-
-.source .arrow {
-    margin-left: 0.2rem;
-    transition: margin-left 0.2s ease-out;
-}
-
-.source:hover > .arrow {
-    margin-left: 0.5rem;
+.command-line-content {
+    color: #b8b8b8;
+    margin-left: 26px;
 }
