@@ -1,91 +1,41 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Source+Sans+Pro:wght@400;700&display=swap');
 
 html {
     width: 100%;
     height: 100%;
 }
 
+a, a:visited, a:link {
+    color: #ECEFF4;
+}
+
 body {
-    background-color: #252525;
-    color: white;
+    background-color: #242933;
+    color: #ECEFF4;
     height: 100%;
-    font-family: "Open Sans", sans-serif;
     padding: 0px;
     margin: 0px;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     overflow-y: hidden;
 }
 
-.profile-picture {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 4px;
-    margin-right: 2rem;
-}
-
-.left-container {
-    flex: 1.5;
-}
-
-.right-container {
-    flex: 2;
-}
-
-.left-container, .right-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: solid 1px lime; */
-}
-
-.container {
-    width: 50%;
-}
-
-.right-container .container {
-    width: 60%;
-}
-
-.image-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 .name {
-    font-size: 26px;
-    padding-bottom: 32px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin: 10px 0px;
 }
 
-.list {
-    margin-top: 32px;
-}
-
-.list-item {
+.subtitle {
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
-    margin: 12px 0;
+    text-align: center;
+    margin: 10px 0px 80px 0px;
 }
 
-.command-line {
-    background-color: #353535ee;
-    font-family: "Roboto Mono", sans-serif;
-    font-size: 15px;
-    padding: 16px 24px;
-    border-radius: 6px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-svg {
-    color: gold;
-    width: 22px;
-    height: 22px;
-}
-
-.command-line-content {
-    color: #b8b8b8;
-    margin-left: 26px;
+.fa.fa-github {
+    font-size: 32px;
 }
