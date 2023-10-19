@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@400;600;700&family=Roboto&family=Roboto+Mono&display=swap');
+
+:root {
+    --red: #ff6666;
+    --gold: #ffc107;
+    --green: #7bd389;
+    --blue: #65afff;
+    --black: #222426;
+    --gray: #a1a1a1;
+    --darkgray: #313335;
+    --lightgray: #d9d9d9;
+    --white: #ffffff;
+}
+
+a, a:visited, a:link {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0px 2px;
+    border-bottom: 3px var(--gold) dashed;
+    transition: padding 0.1s linear;
+}
+
+a:hover {
+    filter: brightness(80%);
+    padding: 0px 4px;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    height: 100%;
+    padding-top: 120px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}

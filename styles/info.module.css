@@ -1,0 +1,84 @@
+.container {
+    font-family: 'Nunito', monospace;
+    margin-bottom: 80px;
+    line-height: 1.8em;
+}
+
+.container:last-child {
+    margin-bottom: 160px;
+}
+
+.container > * {
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 2px 12px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.red {
+    background-color: var(--red);
+    color: var(--black);
+}
+
+.gold {
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+.green {
+    background-color: var(--green);
+    color: var(--black);
+}
+
+.blue {
+    background-color: var(--blue);
+    color: var(--black);
+}
+
+.white {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.subtitle {
+    color: var(--lightgray);
+    font-size: 18px;
+}
+
+.code {
+    background-color: var(--darkgray);
+    color: var(--white);
+    font-family: 'Roboto Mono', monospace;
+    padding: 18px 24px;
+    border-radius: 16px;
+}
+
+.cmd-red {
+    color: var(--red);
+}
+
+.cmd-gold {
+    color: var(--gold);
+}
+
+.cmd-green {
+    color: var(--green);
+}
+
+.cmd-blue {
+    color: var(--blue);
+}
+
+.cmd-white {
+    color: var(--white);
+}
+
+.footer {
+    color: var(--lightgray);
+    font-size: 16px;
+}
