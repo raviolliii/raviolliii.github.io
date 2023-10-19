@@ -22,7 +22,6 @@ a, a:visited, a:link {
 
 a:hover {
     filter: brightness(80%);
-    padding: 0px 4px;
 }
 
 body {
