@@ -50,8 +50,9 @@ build/Release
 node_modules/
 package-lock.json
 
-# React dependencies
+# React dependencies/build outputs
 .next
+out/
 
 # Optional npm cache directory
 .npm
