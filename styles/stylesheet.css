@@ -1,29 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Source+Sans+Pro:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
-
-
-/* 
-dark: #222426;
-gold: #ffc107;
-green: #7bd389;
-red: #ff6666;
-blue: #65afff;
- */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@400;600;700&family=Roboto&family=Roboto+Mono&display=swap');
 
 :root {
     --red: #ff6666;
     --gold: #ffc107;
     --green: #7bd389;
     --blue: #65afff;
-    --dark: #222426;
-    --lightgray: #d9d9d9;
+    --black: #222426;
     --gray: #a1a1a1;
+    --darkgray: #313335;
+    --lightgray: #d9d9d9;
     --white: #ffffff;
-}
-
-html {
-    /* width: 100%;
-    height: 100%; */
 }
 
 a, a:visited, a:link {
@@ -40,67 +26,119 @@ a:hover {
 }
 
 body {
-    background-color: var(--dark);
-    color: var(--lightgray);
+    background-color: var(--black);
+    color: var(--white);
     height: 100%;
-    padding-top: 80px;
+    padding-top: 120px;
     margin: 0px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-content: center; */
-    overflow-y: hidden;
 }
 
-.name {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 32px;
+.title-container {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    animation: fadeInUp;
-    animation-duration: 0.8s;
-    /* border: solid lime 1px; */
 }
 
-.logs-container {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
+.subtitle {
+    color: var(--lightgray);
+    font-size: 22px;
+    font-weight: 400;
+    max-width: 50ch;
+}
+
+.container {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    animation: fadeInUp;
-    animation-duration: 1s;
-    /* border: solid lime 1px; */
 }
 
-.log {
-    margin-bottom: 20px;
+.info {
+    font-family: 'Nunito', monospace;
+    margin-bottom: 80px;
     line-height: 1.8em;
-    /* border: solid lime 1px; */
 }
 
-.timestamp {
-    color: var(--gray);
+.info:last-child {
+    margin-bottom: 160px;
 }
 
-.level {
-    text-transform: uppercase;
+.info > * {
+    margin-bottom: 10px;
 }
 
-.level-debug {
-    color: var(--green);
+.info-title {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 2px 12px;
+    border-radius: 4px;
+    display: inline-block;
 }
 
-.level-info {
-    color: var(--blue);
+.red-title {
+    background-color: var(--red);
+    color: var(--black);
 }
 
-.level-warn {
+.gold-title {
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+.green-title {
+    background-color: var(--green);
+    color: var(--black);
+}
+
+.blue-title {
+    background-color: var(--blue);
+    color: var(--black);
+}
+
+.white-title {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.info-subtitle {
+    color: var(--lightgray);
+    font-size: 18px;
+}
+
+.info-source-code {
+    background-color: var(--darkgray);
+    color: var(--white);
+    font-family: 'Roboto Mono', monospace;
+    padding: 18px 24px;
+    border-radius: 16px;
+}
+
+.info-source-code-cmd-red {
+    color: var(--red);
+}
+
+.info-source-code-cmd-gold {
     color: var(--gold);
 }
 
-.level-error {
-    color: var(--red);
+.info-source-code-cmd-green {
+    color: var(--green);
+}
+
+.info-source-code-cmd-blue {
+    color: var(--blue);
+}
+
+.info-source-code-cmd-white {
+    color: var(--white);
+}
+
+.info-footer {
+    color: var(--lightgray);
+    font-size: 16px;
 }
