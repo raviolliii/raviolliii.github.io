@@ -56,6 +56,7 @@
     font-family: 'Roboto Mono', monospace;
     padding: 18px 24px;
     border-radius: 16px;
+    position: relative;
 }
 
 .cmd-red {
@@ -81,4 +82,18 @@
 .footer {
     color: var(--lightgray);
     font-size: 16px;
+}
+
+.copyBtn {
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 4px 12px;
+    border-radius: 8px;
+}
+
+.hoverable:hover {
+    cursor: pointer;
+    filter: brightness(80%);
 }
