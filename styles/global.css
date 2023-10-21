@@ -12,6 +12,16 @@
     --white: #ffffff;
 }
 
+::-webkit-scrollbar {
+    background: var(--darkgray);
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gray);
+    border-radius: 8px;
+}
+
 a, a:visited, a:link {
     color: var(--white);
     text-decoration: none;
