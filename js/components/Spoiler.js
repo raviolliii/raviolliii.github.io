@@ -55,17 +55,22 @@ export default function Spoiler({ infoData }) {
 function SplitView({ responseTime, rawViewContent, styledViewContent }) {
     return (
         <>
-            <div className={styles.subcontainer + ' ' + styles.rawViewContainer}>
+            <div className={styles.subcontainer}>
                 <div className={styles.rawViewContainerTitle}>
                     Raw Response Fetched ({responseTime}ms)
                 </div>
-                {rawViewContent}
+                <div className={styles.rawViewContainer}>
+                    {rawViewContent}
+                </div>
             </div>
             <div className={styles.divider}>
                 <FontAwesomeIcon icon={faArrowRight} size='xl' />
             </div>
-            <div className={styles.subcontainer + ' ' + styles.styledViewContainer}>
-                {styledViewContent}
+            <div className={styles.subcontainer}>
+                <div className={styles.styledViewContainerTitle}>&nbsp;</div>
+                <div className={styles.styledViewContainer}>
+                    {styledViewContent}
+                </div>
             </div>
         </>
     );

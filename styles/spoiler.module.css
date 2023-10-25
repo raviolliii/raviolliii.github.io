@@ -22,7 +22,7 @@
     text-align: center;
 }
 
-.rawViewContainerTitle {
+.rawViewContainerTitle, .styledViewContainerTitle {
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -36,7 +36,8 @@
     line-height: 1.6em;
     padding: 18px 24px;
     border-radius: 16px;
-    white-space: pre-wrap;
+    white-space: pre;
+    overflow-x: scroll;
 }
 
 .styledViewContainer {

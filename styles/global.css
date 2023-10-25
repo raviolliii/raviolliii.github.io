@@ -14,6 +14,7 @@
 
 ::-webkit-scrollbar {
     background: var(--darkgray);
+    height: 8px;
     width: 8px;
 }
 
