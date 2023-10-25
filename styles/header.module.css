@@ -14,3 +14,10 @@
     font-weight: 400;
     max-width: 50ch;
 }
+
+.whisperTitle {
+    color: var(--lightgray);
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 60ch;
+}
