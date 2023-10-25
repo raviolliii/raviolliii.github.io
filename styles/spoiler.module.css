@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+}
+
+.subcontainer {
+    width: 47%;
+    padding: 18px 24px;
+}
+
+.divider {
+    color: var(--gray);
+    width: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingContainer {
+    color: var(--lightgray);
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+}
+
+.rawViewContainerTitle {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.rawViewContainer {
+    color: var(--lightgray);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    line-height: 1.6em;
+    padding: 18px 24px;
+    border-radius: 16px;
+    white-space: pre-wrap;
+}
+
+.styledViewContainer {
+    line-height: 1.4em;
+}

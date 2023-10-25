@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Header from "../components/Header";
-import InfoContainer from "../components/InfoContainer";
-import Footer from "../components/Footer";
+import Header from "../js/components/Header";
+import InfoContainer from "../js/components/InfoContainer";
+import Footer from "../js/components/Footer";
 
 export default function Home() {
     return (

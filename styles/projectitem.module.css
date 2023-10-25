@@ -1,0 +1,46 @@
+.container {
+    margin-bottom: 40px;
+}
+
+.container > * {
+    margin-bottom: 12px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+/* TODO: move theme to global config? */
+
+.red {
+    border-bottom: solid 4px var(--red);
+}
+
+.gold {
+    border-bottom: solid 4px var(--gold);
+}
+
+.green {
+    border-bottom: solid 4px var(--green);
+}
+
+.blue {
+    border-bottom: solid 4px var(--blue);
+}
+
+.white {
+    border-bottom: solid 4px var(--white);
+}
+
+.description {
+    color: var(--lightgray);
+    font-size: 18px;
+}
+
+.footer {
+    font-size: 16px;
+    text-align: right;
+}

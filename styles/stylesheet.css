@@ -59,7 +59,7 @@ body {
 }
 
 .info {
-    font-family: 'Nunito', monospace;
+    font-family: 'Nunito', sans-serif;
     margin-bottom: 80px;
     line-height: 1.8em;
 }

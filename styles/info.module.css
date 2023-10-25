@@ -1,5 +1,5 @@
 .container {
-    font-family: 'Nunito', monospace;
+    font-family: 'Nunito', sans-serif;
     margin-bottom: 80px;
     line-height: 1.8em;
 }
@@ -79,11 +79,6 @@
     color: var(--white);
 }
 
-.footer {
-    color: var(--lightgray);
-    font-size: 16px;
-}
-
 .copyBtn {
     display: inline-block;
     position: absolute;
@@ -95,5 +90,17 @@
 
 .hoverable:hover {
     cursor: pointer;
-    filter: brightness(80%);
+    color: var(--gray);
+}
+
+.footer {
+    color: var(--lightgray);
+    font-size: 16px;
+    /* border: solid 1px lime; */
+    text-align: right;
+}
+
+.footer:hover {
+    cursor: pointer;
+    color: var(--gray);
 }
